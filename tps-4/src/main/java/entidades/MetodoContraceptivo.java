@@ -9,9 +9,8 @@ import jakarta.persistence.ManyToOne;
 
 @Entity
 public class MetodoContraceptivo  extends PanacheEntity{
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public Integer codigo;
+  
+ 
     public String nome;
     public String tipo;
     public Double eficacia;

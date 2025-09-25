@@ -9,7 +9,7 @@ import io.quarkus.test.junit.QuarkusTest;
 import jakarta.transaction.Transactional;
 
 @QuarkusTest
-public class CicloMentrualTests {
+public class CicloMenstrualTests {
 
     @Test 
     @Transactional 
@@ -22,7 +22,7 @@ public class CicloMentrualTests {
 
         ciclomenstrual.persist(); 
         
-        Assertions.assertEquals(ciclomenstrual.dataInicio, "2025-09-11");
+        Assertions.assertEquals(LocalDate.parse("2025-09-11"), ciclomenstrual.dataInicio);
     }
 
 

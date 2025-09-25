@@ -11,9 +11,8 @@ import jakarta.persistence.ManyToOne;
 
 @Entity
 public class CicloMenstrual  extends PanacheEntity{
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public Integer codigo;
+  
+  
     public LocalDate dataInicio;
     public int duracaoCiclo;
     public int duracaoMenstruacao;

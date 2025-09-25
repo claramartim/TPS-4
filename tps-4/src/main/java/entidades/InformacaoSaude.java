@@ -8,9 +8,8 @@ import jakarta.persistence.Id;
 
 @Entity
 public class InformacaoSaude  extends PanacheEntity{
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public Integer codigo;
+  
+
     public String titulo;
     public String conteudo;
     public String categoria;

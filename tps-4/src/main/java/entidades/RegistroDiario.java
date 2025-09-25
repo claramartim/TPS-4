@@ -11,9 +11,8 @@ import jakarta.persistence.ManyToOne;
 
 @Entity
 public class RegistroDiario  extends PanacheEntity{
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public Integer codigo;
+   
+  
     public LocalDate data;
     public String humor;
     public String emocoes; 

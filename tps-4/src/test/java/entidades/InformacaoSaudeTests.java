@@ -3,7 +3,6 @@ package entidades;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import io.quarkus.hibernate.orm.panache.PanacheEntity;
 import io.quarkus.test.junit.QuarkusTest;
 import jakarta.transaction.Transactional;
 
@@ -22,7 +21,7 @@ public void TestSalvaTituloConteudoECategoriaEMostraAsInformacoesSalvas(){
 
     informacaosaude.persist();
 
-    Assertions.assertEquals(informacaosaude.titulo, "como usar anticoncepcional");
+    Assertions.assertEquals("como usar anticoncepcional", informacaosaude.titulo);
 
 
 }
