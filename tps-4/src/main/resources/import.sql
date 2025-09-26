@@ -7,15 +7,15 @@
  ( 'Erica Lima', 'erica.lima@email.com', 'senha_hash5', '1997-03-05', 'Feminino', FALSE);
 
 /*Ciclo Menstrual*/
- INSERT INTO CicloMenstrual (usuario_codigo, dataInicio, duracaoCiclo, duracaoMenstruacao) VALUES
+ INSERT INTO CicloMenstrual (usuario_id, dataInicio, duracaoCiclo, duracaoMenstruacao) VALUES
  ( 1, '2025-09-01', 28, 5),
- ( 1, '2025-08-05', 27, 4),
- ( 2, '2025-09-10', 30, 6),
- ( 3, '2025-09-12', 29, 5),
- ( 4, '2025-09-08', 26, 3);
+ ( 2, '2025-08-05', 27, 4),
+ ( 3, '2025-09-10', 30, 6),
+ ( 4, '2025-09-12', 29, 5),
+ ( 5, '2025-09-08', 26, 3);
 
 /*Registro Diário*/
- INSERT INTO RegistroDiario ( usuario_codigo, data, humor, emocoes, sintomas, doencas) VALUES
+ INSERT INTO RegistroDiario ( usuario_id, data, humor, emocoes, sintomas, doencas) VALUES
  ( 1, '2025-09-01', 'Cansada', '{"emocao":"tristeza"}', '{"sintoma":"dor de cabeça"}', '{"doença":"nenhuma"}'),
  ( 2, '2025-09-11', 'Feliz', '{"emocao":"alegria"}', '{"sintoma":"nenhum"}', '{"doença":"nenhuma"}'),
  ( 3, '2025-09-13', 'Estressada', '{"emocao":"raiva"}', '{"sintoma":"cólicas"}', '{"doença":"nenhuma"}'),
